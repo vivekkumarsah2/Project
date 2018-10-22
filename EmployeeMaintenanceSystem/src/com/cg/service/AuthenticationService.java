@@ -5,9 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import org.apache.log4j.Logger;
-
 import com.cg.admin.ui.AdminUI;
 import com.cg.employee.ui.EmployeeUI;
 

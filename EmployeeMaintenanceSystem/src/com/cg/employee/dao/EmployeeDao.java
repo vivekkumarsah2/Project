@@ -13,7 +13,7 @@ public class EmployeeDao
 	Connection con = null;
 	PreparedStatement ps = null;
 	
-	public void EmpDAO()
+	public void EmpCon()
 	{
 		try
 		{
@@ -32,29 +32,21 @@ public class EmployeeDao
 			e.printStackTrace();
 		}	
 	}
-	
-	
 		
-		
-		
-	public void s_ID(String str)
+	public void search(String field, String pattern)
 	{
-		EmpDAO();
-		String sql = "select * from employee where emp_id like '?'";
+		EmpCon();
+		String sql = "select * from employee where ? like '?'";
 		
 		try
 		{
 			ps = con.prepareStatement(sql);
+			ps.setString(1, field);
+			ps.setString(2, pattern);		
 		}
 		catch (SQLException e)
 		{
 			e.printStackTrace();
 		}
-		
 	}
-		
-		
-		
-		
-		
 }

@@ -16,7 +16,7 @@ public final class Employee
 	private Integer DeptId;
 	private String EGrade;
 	private String EDesignation;
-	private String EBasic;
+	private Integer EBasic;
 	private String EGender;
 	private String EMaritalStatus;
 	private String EAddress;
@@ -110,11 +110,11 @@ public final class Employee
 	{
 		EDesignation = eDesignation;
 	}
-	public String getEBasic()
+	public Integer getEBasic()
 	{
 		return EBasic;
 	}
-	public void setEBasic(String eBasic)
+	public void setEBasic(Integer eBasic)
 	{
 		EBasic = eBasic;
 	}
